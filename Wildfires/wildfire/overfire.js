@@ -76,20 +76,9 @@
           .duration(300)
           tip.hide(d)
       })
-      // .on("mouseenter", function(d){
-      //   var element = d3.select(this)
-      //   element
-      //     .attr("r", 9)
-      //     .on("mouseleave", function(d){
-      //       element
-      //         .attr("r", 3)
-      //     })
-      // })
-      // .on('mouseover', tip.show)
-      // .on('mouseout', tip.hide)
+
 
     svg.append("text")
-      // .text("acres_burned")
       .attr("x", width / 2)
       .attr("y", 0)
       .attr('fill', 'grey')
@@ -126,26 +115,3 @@
   }
 })();
 
-
-
-    // var nested = d3.nest()
-    //   .key(function(d){
-    //     return d.month
-    //   })
-    //   .entries(datapoints);
-
-    // var multiples = svg.selectAll('g')
-    //   .data(nested)
-    //   .enter().append('g')
-    //   .attr('transform', function(d){
-    //     var xPosition = xPositionScale(d.key);
-    //     return "translate(" + xPosition + ",150)"
-    //   })
-
-
-    // multiples.each( function (d) {
-
-      // d3.select(this).selectAll("path")
-      // .data(pie(d.values))
-      // .enter().append("path")
-      // .attr("d", arc)

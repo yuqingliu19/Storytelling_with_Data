@@ -54,18 +54,6 @@
       .attr('width', 10)
       .attr('fill', '#f03b20')
 
-    // svg.selectAll("circle")
-    //   .data(datapoints)
-    //   .enter().append("circle")
-    //   .attr('r', function(d){
-    //     return sizeScale(d.total)
-    //   })
-    //   .attr('fill', '#f03b20')
-    //   .attr("cx", function(d) {
-    //     return xPositionScale(d.year)
-    //   })
-    //   .attr("cy", height/2)
-    //   .attr('opacity', 0.25)
       
     var xAxis = d3.axisBottom(widthScale)
 
@@ -76,65 +64,15 @@
       .lower() // move to the bottom of the stack
 
     var yAxis = d3.axisLeft(heightScale)
-    //   // .tickValues([700000, 750000, 800000, 850000, 900000, 950000, 1000000, 1500000])
-    //   // .tickSize(-width)
+
 
     svg.append("g")
       .attr("class", "axis y-axis")
       .call(yAxis)
       .lower() // move to the bottom of the stack
 
-    // svg.selectAll(".y-axis path").remove()
-    // // svg.selectAll(".y-axis text").remove()
-    // svg.selectAll(".y-axis line")
-    //       .attr("stroke-dasharray", 1.5)
-    //       .attr("stroke", "grey")
 
   }
 })();
 
-      // .attr("fill", function(d) {
-      //   return colorScale(d.age)
-      // })
-
-
-    // var nested = d3.nest()
-    //   .key(function(d) {
-    //     return d.acres_burned
-    //   })
-    //   .entries(datapoints)
-
-    // svg.selectAll("path")
-    //   .data(nested)
-    //   .enter().append("path")
-    //   .attr("class", function(d){
-    //     return d.key
-    //   })
-    //   .attr("stroke", function(d) {
-    //     return colorScale(d.key)
-    //   })
-    //   .attr("stroke-width", 2)
-    //   .attr("fill", "none")
-    //   .attr("d", function(d) {
-    //     return line(d.values)
-    //   })
-
-
-
-// svg.selectAll("text")
-//       .data(nested)
-//       .enter().append("text")
-//       .attr("class", function(d){
-//         return d.key
-//       })
-//       .attr("font-size", 11)
-//       .attr("fill", '#333333')
-//       .attr("x", xPositionScale('2010'))
-//       .attr("dx", 5)
-//       .attr("y", function(d) {
-//         console.log(d.values[1].acres_burned)
-//         return yPositionScale(d.values[1].acres_burned)
-//       })
-//       .text(function(d) {
-//         return d.values[1].acres_burned + " " + d.key
-//       })
+   
