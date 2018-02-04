@@ -1,0 +1,62 @@
+
+Just like last time, each rectangle is one of these lines:
+
+  <rect x="75" y="75" width="20" height="20" fill="darkred"></rect>
+
+
+
+
+
+
+
+
+
+
+
+
+The SVG is 200 pixels wide, and 200 pixels tall. You can tell if you look at the <svg> tag:
+
+  <svg height="200" width="200">
+    <rect x="75" y="75" width="20" height="20" fill="darkred"></rect>
+    <rect x="120" y="100" width="20" height="20" fill="teal"></rect>
+    <rect x="75" y="125" width="20" height="20" fill="teal"></rect>
+  </svg>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Since the x and y are the TOP and LEFT of the rect, if you set the x or the y to 200, the boxes will fall outside of the SVG and disappear! You need to pay attention to their height and width.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Also, since rectangles are position from the top left, you can't use 100 as the x coordinate for the red one. That will push it a little too far to the right.
+
+
+
+
+
+

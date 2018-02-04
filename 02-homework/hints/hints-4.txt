@@ -1,0 +1,28 @@
+This is like the last one, except circles are positioned from the CENTER.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Last time we paid special attention to the height and width - this time you have to pay attention to the radius.
+
+
+
+
+
+
+
+
+
+
+You use #EE599A the same as you use colors like 'red' or 'pink'

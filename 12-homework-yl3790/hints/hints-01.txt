@@ -1,0 +1,267 @@
+You're going to be using d3-tip.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Add the d3-tip JavaScript file to your HTML file using the <script> tag. Make sure it's in the right place!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The "right place" is AFTER you include d3, but BEFORE you include your chart files.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Do NOT google for d3-tip and use what comes up - it might only work with d3 v3. Make sure you use what we used in class!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This involves actually creating a new file, since we aren't using a CDN.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now add d3-tip to your javascript file. There should be THREE things you steal from the file we made in class:
+
+1) You make the d3-tip object
+2) You install it into the SVG
+3) You say hey, on certain events please run this
+
+Be especially careful you put #1 and #2 in the right place
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Boy it sure looks weird. Looks like you need to steal some CSS from that file, too!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To make it look nice, you need to change the CSS. When you're doing CSS, there are two ways to write colors:
+
+1) #44AC3C, which tells you there should be 44 red, AC blue and 3C green.
+2) rgba(10,255,44, 0.3), which tells you there should be 10 red, 255 blue and 44 green, with 30% alpha.
+
+We don't need alpha for this. #ffffff is white. 'white' is also white. You can find the blue somewhere in the JS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+While you're at it, change the rule in  .d3-tip.n:after about margins to be "margin: -2px 0 0 0;"
+
+it means "d3-tip, when you're making the box be NORTH (above) the element you're hovering on" 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now you need to edit what shows up in the tooltip. console.log() will be your friend.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To get the dates to look nice in your tooltip you're going to need to use a d3 date formatter. Somewhere else on the page is something that parses STRINGS into DATETIMES, but now we're going to do the opposite. See the timeFormatter variable here below:
+
+var parseTime = d3.timeParse("%Y-%m-%d")
+var timeFormatter = d3.timeParse("%b %Y")
+
+// Parses a STRING into a DATETIME
+var date = parseTime("2017-04-31")
+
+// Turns a DATETIME into a STRING
+// this one looks like "Apr 2017"
+var dateString = timeFormatter(date)
+
+You don't need to create a time parser, I'm only showing you that so you know how the whole process works. You can use strftime.org if you need help with the secret % codes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

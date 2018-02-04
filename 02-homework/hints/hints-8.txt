@@ -1,0 +1,20 @@
+100 people = 10 radius, but 200 people is not 20 radius. If we did that, our circles would be huge. It's the SIZE of the circle that should be related to the number of people - when we say SIZE, we really mean the AREA.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To get a radius measurement from an area measurement, just take the square root. We'll talk about why in class. I want my 100 people to be represented in a circle, so I get the square root of 100 to find the radius: 10. Do the same for the others.
+
+
+
+

@@ -1,0 +1,82 @@
+,country,killed,wounded,region,lat,lng
+0,Afghanistan,6119,6485.0,Asia,33.93911,67.709953
+2,Algeria,9,2.0,Africa & Middle East,28.033886,1.6596259999999998
+5,Armenia,6,1.0,Asia,40.069099,45.038189
+8,Azerbaijan,1,1.0,Asia,40.143105,47.576927000000005
+9,Bahrain,1,2.0,Africa & Middle East,26.0667,50.5577
+10,Bangladesh,76,90.0,Asia,23.684994,90.35633100000001
+11,Belgium,36,276.0,Europe & Russia,50.503887,4.469936
+12,Brazil,1,0.0,South America,-14.235004,-51.92528
+14,Burkina Faso,62,40.0,Africa & Middle East,12.238333,-1.561593
+15,Burundi,74,213.0,Africa & Middle East,-3.3730559999999996,29.918885999999997
+16,Cameroon,245,324.0,Africa & Middle East,7.3697219999999986,12.354722
+17,Canada,1,34.0,North & Central America,56.130366,-106.34677099999999
+18,Central African Republic,189,173.0,Africa & Middle East,6.611110999999998,20.939444
+19,Chad,22,68.0,Africa & Middle East,15.454166,18.732207
+21,China,13,18.0,Asia,35.86166,104.195397
+22,Colombia,38,60.0,South America,4.570868,-74.297333
+25,Democratic Republic of the Congo,532,176.0,Africa & Middle East,-4.038333000000001,21.758664000000003
+26,Denmark,1,3.0,Europe & Russia,56.26392,9.501785
+27,Ecuador,1,7.0,South America,-1.8312389999999998,-78.18340599999998
+28,Egypt,606,626.0,Africa & Middle East,26.820553000000004,30.802497999999996
+29,Ethiopia,279,83.0,Africa & Middle East,9.145,40.489672999999996
+31,France,95,470.0,Europe & Russia,46.227638,2.213749
+32,Georgia,1,7.0,Asia,32.1656221,-82.9000751
+33,Germany,27,117.0,Europe & Russia,51.165690999999995,10.451526
+35,Greece,66,2.0,Europe & Russia,39.074208,21.824312
+36,Guinea,1,0.0,Africa & Middle East,9.945587,-9.696645
+38,Haiti,7,,North & Central America,18.971187,-72.28521500000001
+39,Honduras,2,0.0,North & Central America,15.199998999999998,-86.241905
+41,India,462,784.0,Asia,20.593684,78.96288
+42,Indonesia,22,35.0,Asia,-0.789275,113.921327
+43,Iran,12,8.0,Africa & Middle East,32.427908,53.68804599999999
+44,Iraq,12187,14285.0,Africa & Middle East,33.223191,43.679291
+45,Ireland,2,3.0,Europe & Russia,53.1423672,-7.692053599999999
+46,Israel,16,175.0,Africa & Middle East,31.046051000000002,34.851612
+47,Italy,1,1.0,Europe & Russia,41.87194,12.56738
+48,Ivory Coast,22,33.0,Africa & Middle East,7.5399889999999985,-5.5470799999999985
+49,Japan,19,26.0,Asia,36.204824,138.252924
+50,Jordan,35,65.0,Africa & Middle East,30.585164000000002,36.238414
+51,Kazakhstan,10,11.0,Asia,48.019573,66.923684
+52,Kenya,72,69.0,Africa & Middle East,-0.023559,37.906193
+54,Kuwait,1,1.0,Africa & Middle East,29.311659999999996,47.481766
+55,Kyrgyzstan,1,5.0,Asia,41.20438,74.766098
+56,Laos,3,15.0,Asia,19.856270000000002,102.495496
+57,Lebanon,25,74.0,Africa & Middle East,33.854721000000005,35.862285
+58,Libya,631,737.0,Africa & Middle East,26.3351,17.228331
+59,Madagascar,3,91.0,Africa & Middle East,-18.766947000000002,46.869107
+60,Malaysia,6,9.0,Asia,4.210483999999999,101.97576600000001
+62,Mali,176,220.0,Africa & Middle East,17.570692,-3.9961660000000006
+63,Mexico,4,0.0,North & Central America,23.634501,-102.552784
+65,Mozambique,62,83.0,Africa & Middle East,-18.665695,35.529562
+66,Myanmar,73,58.0,Asia,21.916221,95.955974
+67,Nepal,5,15.0,Asia,28.394857000000002,84.12400799999998
+68,Netherlands,1,3.0,Europe & Russia,52.132633,5.2912659999999985
+70,Niger,184,139.0,Africa & Middle East,17.607789,8.081666
+71,Nigeria,2164,1155.0,Africa & Middle East,9.081999,8.675277000000001
+72,Pakistan,1112,1894.0,Asia,30.375321000000003,69.34511599999999
+74,Paraguay,10,2.0,South America,-23.442503,-58.44383199999999
+75,Peru,11,7.0,South America,-9.189967,-75.015152
+76,Philippines,411,720.0,Asia,12.879721,121.77401699999999
+78,Republic of the Congo,31,0.0,Africa & Middle East,-0.228021,15.827658999999999
+79,Russia,64,61.0,Europe & Russia,61.52401,105.31875600000001
+81,Saudi Arabia,161,196.0,Africa & Middle East,23.885942,45.079162
+82,Sierra Leone,1,0.0,Africa & Middle East,8.460555000000001,-11.779889
+84,Somalia,1558,1275.0,Africa & Middle East,5.152149,46.199616
+85,South Africa,21,11.0,Africa & Middle East,-30.559482,22.937506
+87,South Sudan,633,191.0,Africa & Middle East,6.876991899999998,31.3069788
+90,Sudan,182,213.0,Africa & Middle East,12.862807,30.217636
+93,Syria,2755,2936.0,Africa & Middle East,34.80207499999999,38.996815000000005
+95,Tajikistan,1,0.0,Asia,38.861034000000004,71.276093
+96,Tanzania,3,2.0,Africa & Middle East,-6.369028,34.888822
+97,Thailand,120,385.0,Asia,15.870032,100.992541
+98,Tunisia,71,26.0,Africa & Middle East,33.886917,9.537499
+99,Turkey,1004,2772.0,Africa & Middle East,38.963745,35.243322
+100,Uganda,75,19.0,Africa & Middle East,1.373333,32.290275
+101,Ukraine,48,39.0,Europe & Russia,48.379433,31.1655799
+102,United Kingdom,9,20.0,Europe & Russia,55.378051,-3.435973
+103,United States,68,139.0,North & Central America,37.09024,-95.712891
+104,Uruguay,1,1.0,South America,-32.522779,-55.765834999999996
+105,Venezuela,9,77.0,South America,6.42375,-66.58973
+106,West Bank and Gaza Strip,90,124.0,Africa & Middle East,14.4931471,121.00689270000001
+107,Yemen,1517,1340.0,Africa & Middle East,15.552726999999999,48.516388

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+  </head>
+  <body>
+    <div id="container">
+
+      <h1>You use classes to identify and style elements.</h1>
+      <p>You can also use an <strong>id</strong> if there's only one of them.
+
+      <style>
+        /*
+          This is CSS.
+          It usually goes in the <head> but 
+          hey this is just a demonstration
+        */
+        body {
+          font-family: Helvetica;
+        }
+
+        h1 {
+          font-size: 3em;
+          background: yellow;
+          padding: 15px 30px;
+        }
+
+        #container { 
+          width: 450px;
+          margin: 0px auto;
+        }
+
+        p {
+          color: #333333;
+        }
+
+        .colorful {
+          color: red;
+        }
+
+        .big {
+          font-size: 32px;
+          font-weight: bold;
+        }
+      </style>
+
+      <!-- Now we're back to HTML -->
+
+      <p>A normal paragraph looks like this</p>
+      <p>Another normal paragraph is right here</p>
+      <p class="colorful">Now this paragraph is colorful</p>
+      <p class="big">Now it's big</p>
+      <p class="colorful big">Now it's colorful AND big</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Transformations, small multiples and custom additions</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <style>
+      svg { 
+        background: #f9f9f9;
+        display: block;
+        margin: 0 auto;
+      }
+
+      h1 { margin-bottom: 2rem; }
+
+      body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      h3 { 
+        margin-top: 3rem; 
+        margin-bottom: 1rem;
+      }
+
+      .container {
+        max-width: 46rem;
+      }
+
+      img.block {
+        display: block;
+        border: solid #333 1p;
+        margin: 0 auto;
+      }
+
+      svg {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+</head>
+<body>
+<div class="container">
+  <h1>Transformations and small multiples</h1>
+
+  <h3>Labeled lines</h3>
+  <p>Let's make a bunch of lines and label each of them.</p>
+
+  <div id="chart-1"></div>
+
+  <h3>Small multiples</h3>
+  <p>No, that's too busy, let's make them <strong>totally separate graphs</strong>.</p>
+
+  <div id="chart-2"></div>
+
+  <!-- This is D3, our graphing library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+  <!-- Now we include our actual visualization -->
+  <script src="01-labeled.js"></script>
+  <script src="01-small-multiples.js"></script>
+</div>
+</body>
+</html>

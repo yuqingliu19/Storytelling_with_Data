@@ -1,0 +1,92 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arcs, Radial Diagrams and Pies: Day 2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <style>
+      svg { 
+        background: #f9f9f9;
+        display: block;
+        margin: 0 auto;
+      }
+
+      h1 { margin-bottom: 2rem; }
+
+      body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      h3 { 
+        margin-top: 3rem; 
+        margin-bottom: 1rem;
+      }
+
+      .container {
+        max-width: 46rem;
+      }
+
+      img.block {
+        display: block;
+        border: solid #333 1p;
+        margin: 0 auto;
+      }
+
+      svg {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+</head>
+<body>
+<div class="container">
+  <h1>Arcs, Radial Diagrams and Pies: Day 2</h1>
+
+  <h3>Datasets:</h3>
+  <ul>
+    <li><code>02-house-sales-by-month.csv</code>: House sales by month. Not sure of the measurement.</li>
+    <li><code>03-high-low-by-month.csv</code>: Just fake data with a <code>high</code> and <code>low</code></li>
+    <li><code>06-pie-data.csv</code>: Fake data that should add up to 100%</li>
+    <li><code>flu.csv</code>: Reported cases of the flu by year and week and age. We're concerned with <code>TOTAL PATIENTS</code> and <code>WEEK</code>.</li>
+    <li><code>time-binned.csv</code>: When babies are born, in 5-minute chunks.</li>
+    <li><code>time-binned.csv</code>: When babies are born, in 5-minute chunks. Also broken down through <code>delivery_type</code> between vaginal or C-section (but which is which!).</li>
+  </ul>
+
+  <h3>Radial lines</h3>
+  <p>Using <code>02-house-sales-by-month.csv</code></p>
+  <div id="chart-2"></div>
+
+  <h3>Radial areas (A)</h3>
+  <p>Using <code>02-house-sales-by-month.csv</code></p>
+  <div id="chart-3-a"></div>
+
+  <h3>Radial areas (B)</h3>
+  <p>Using <code>03-high-low-by-month.csv</code></p>
+  <div id="chart-3-b"></div>
+
+  <h3>Radial bars</h3>
+  <p>Using <code>03-high-low-by-month.csv</code></p>
+  <div id="chart-4"></div>
+
+  <h3>Radial scatters</h3>
+  <p>Using <code>03-high-low-by-month.csv</code></p>
+  <div id="chart-5"></div>
+
+  <h3>Pies</h3>
+  <p>Using <code>06-pie-data.csv</code></p>
+  <div id="chart-6"></div>
+
+  <!-- This is D3, our graphing library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.2/d3.min.js"></script>
+
+  <!-- Now we include our actual visualization -->
+  <script src="01-arcs.js"></script>
+  <script src="02-lines.js"></script>
+  <script src="03-areas-a.js"></script>
+  <script src="03-areas-b.js"></script>
+  <script src="04-bars.js"></script>
+  <script src="05-scatters.js"></script>
+  <script src="06-pies.js"></script>
+</div>
+</body>
+</html>

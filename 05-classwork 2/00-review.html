@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dumbbells: D3 and multiple visual representations</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <style>
+      svg { 
+        background: #f9f9f9;
+        display: block;
+        margin: 0 auto;
+      }
+
+      h1 { margin-bottom: 2rem; }
+
+      body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      h3 { 
+        margin-top: 3rem; 
+        margin-bottom: 1rem;
+      }
+
+      .container {
+        max-width: 46rem;
+      }
+
+      img.block {
+        display: block;
+        border: solid #333 1p;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+</head>
+<body>
+<div class="container">
+  <h1>D3 and multiple visual representations</h1>
+
+  <p>You'll need to run a <strong>local web server</strong> to make this one work. Open up the command line and whichever command is right for your machine:</p>
+  <ul>
+    <li><strong>Python 3:</strong><code>python3 -m http.server</code></li>
+    <li><strong>Python 2:</strong><code>python -m SimpleHTTPServer</code></li>
+  </ul>
+  <p>Then visit <a href="http://localhost:8000/">http://localhost:8000/</a> to see your visualization. If you get an an "address already in use" error you already have a server running.</p>
+  
+  <p>We're going to be making a <a href="https://4.bp.blogspot.com/-usc5wqC7dIQ/WAk27Djy3JI/AAAAAAAA4zk/22rGdFAV_tcJr6HAzp15cpDptSI-6itKwCPcB/s1600/OECD%2BAlcohol%2BConsumption%2B-%2BBarbell.png">barbell plot</a> which has a thousand other names. We made one in Altair ages ago!</p>
+  
+  <p>Our data is <strong>long_gdp.csv</strong> (...or is it?)</p>
+
+  <div id="chart"></div>
+
+  <!-- This is D3, our graphing library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+  <!-- Now we include our actual visualization -->
+  <script src="00-review.js"></script>
+</div>
+</body>
+</html>

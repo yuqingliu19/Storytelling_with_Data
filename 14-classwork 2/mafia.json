@@ -1,0 +1,513 @@
+{
+  "nodes": [
+    {
+      "student": "Steely Dan",
+      "label": "Steely Dan",
+      "node_group": 1,
+      "id": "Steely Dan"
+    },
+    {
+      "student": "Beyonce",
+      "label": "Beyonce",
+      "node_group": 1,
+      "id": "Beyonce"
+    },
+    {
+      "student": "Madonna",
+      "label": "Madonna",
+      "node_group": 1,
+      "id": "Madonna"
+    },
+    {
+      "student": "Adam Levine",
+      "label": "Adam Levine",
+      "node_group": 1,
+      "id": "Adam Levine"
+    },
+    {
+      "student": "Hall and Oates",
+      "label": "Hall and Oates",
+      "node_group": 1,
+      "id": "Hall and Oates"
+    },
+    {
+      "student": "Nicki Minaj",
+      "label": "Nicki Minaj",
+      "node_group": 1,
+      "id": "Nicki Minaj"
+    },
+    {
+      "student": "Drake",
+      "label": "Drake",
+      "node_group": 1,
+      "id": "Drake"
+    },
+    {
+      "student": "Justin Bieber",
+      "label": "Justin Bieber",
+      "node_group": 1,
+      "id": "Justin Bieber"
+    },
+    {
+      "student": "Kesha",
+      "label": "Kesha",
+      "node_group": 1,
+      "id": "Kesha"
+    },
+    {
+      "student": "The Eagles",
+      "label": "The Eagles",
+      "node_group": 1,
+      "id": "The Eagles"
+    },
+    {
+      "student": "The Cars",
+      "label": "The Cars",
+      "node_group": 1,
+      "id": "The Cars"
+    },
+    {
+      "student": "Pat Benatar",
+      "label": "Pat Benatar",
+      "node_group": 1,
+      "id": "Pat Benatar"
+    },
+    {
+      "student": "Lady Gaga",
+      "label": "Lady Gaga",
+      "node_group": 1,
+      "id": "Lady Gaga"
+    },
+    {
+      "student": "Tina Turner",
+      "label": "Tina Turner",
+      "node_group": 1,
+      "id": "Tina Turner"
+    },
+    {
+      "student": "Fetty Wap",
+      "label": "Fetty Wap",
+      "node_group": 1,
+      "id": "Fetty Wap"
+    },
+    {
+      "label": "gis",
+      "node_group": 2,
+      "id": "gis"
+    },
+    {
+      "label": "mapping new york",
+      "node_group": 2,
+      "id": "mapping new york"
+    },
+    {
+      "label": "discrete math",
+      "node_group": 2,
+      "id": "discrete math"
+    },
+    {
+      "label": "statistical inference",
+      "node_group": 2,
+      "id": "statistical inference"
+    },
+    {
+      "label": "linear algebra",
+      "node_group": 2,
+      "id": "linear algebra"
+    },
+    {
+      "label": "essential data structures",
+      "node_group": 2,
+      "id": "essential data structures"
+    },
+    {
+      "label": "algorithms",
+      "node_group": 2,
+      "id": "algorithms"
+    },
+    {
+      "label": "probability theory",
+      "node_group": 2,
+      "id": "probability theory"
+    },
+    {
+      "label": "art of the profile",
+      "node_group": 2,
+      "id": "art of the profile"
+    },
+    {
+      "label": "photo 2",
+      "node_group": 2,
+      "id": "photo 2"
+    },
+    {
+      "label": "stabile",
+      "node_group": 2,
+      "id": "stabile"
+    },
+    {
+      "label": "ethics",
+      "node_group": 2,
+      "id": "ethics"
+    },
+    {
+      "label": "business",
+      "node_group": 2,
+      "id": "business"
+    },
+    {
+      "label": "computer science in finance",
+      "node_group": 2,
+      "id": "computer science in finance"
+    },
+    {
+      "label": "management technology",
+      "node_group": 2,
+      "id": "management technology"
+    },
+    {
+      "label": "statistical reasoning",
+      "node_group": 2,
+      "id": "statistical reasoning"
+    },
+    {
+      "label": "computing in context",
+      "node_group": 2,
+      "id": "computing in context"
+    },
+    {
+      "label": "linear regression models",
+      "node_group": 2,
+      "id": "linear regression models"
+    },
+    {
+      "label": "politics of policy",
+      "node_group": 2,
+      "id": "politics of policy"
+    }
+  ],
+  "links": [
+    {
+      "id": 0,
+      "source": "Steely Dan",
+      "target": "gis",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 1,
+      "source": "Steely Dan",
+      "target": "mapping new york",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 2,
+      "source": "Steely Dan",
+      "target": "discrete math",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 3,
+      "source": "Beyonce",
+      "target": "statistical inference",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 4,
+      "source": "Madonna",
+      "target": "gis",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 5,
+      "source": "Madonna",
+      "target": "discrete math",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 6,
+      "source": "Madonna",
+      "target": "linear algebra",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 7,
+      "source": "Madonna",
+      "target": "essential data structures",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 8,
+      "source": "Adam Levine",
+      "target": "statistical inference",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 9,
+      "source": "Adam Levine",
+      "target": "algorithms",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 10,
+      "source": "Adam Levine",
+      "target": "probability theory",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 11,
+      "source": "Hall and Oates",
+      "target": "discrete math",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 12,
+      "source": "Hall and Oates",
+      "target": "linear algebra",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 13,
+      "source": "Hall and Oates",
+      "target": "essential data structures",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 14,
+      "source": "Nicki Minaj",
+      "target": "statistical inference",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 15,
+      "source": "Nicki Minaj",
+      "target": "algorithms",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 16,
+      "source": "Nicki Minaj",
+      "target": "probability theory",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 17,
+      "source": "Drake",
+      "target": "art of the profile",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 18,
+      "source": "Drake",
+      "target": "photo 2",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 19,
+      "source": "Drake",
+      "target": "stabile",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 20,
+      "source": "Drake",
+      "target": "ethics",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 21,
+      "source": "Drake",
+      "target": "business",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 22,
+      "source": "Justin Bieber",
+      "target": "statistical inference",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 23,
+      "source": "Justin Bieber",
+      "target": "algorithms",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 24,
+      "source": "Justin Bieber",
+      "target": "probability theory",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 25,
+      "source": "Kesha",
+      "target": "algorithms",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 26,
+      "source": "Kesha",
+      "target": "computer science in finance",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 27,
+      "source": "Kesha",
+      "target": "management technology",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 28,
+      "source": "The Eagles",
+      "target": "gis",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 29,
+      "source": "The Eagles",
+      "target": "statistical reasoning",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 30,
+      "source": "The Eagles",
+      "target": "computing in context",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 31,
+      "source": "The Cars",
+      "target": "gis",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 32,
+      "source": "The Cars",
+      "target": "essential data structures",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 33,
+      "source": "The Cars",
+      "target": "statistical reasoning",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 34,
+      "source": "Pat Benatar",
+      "target": "gis",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 35,
+      "source": "Pat Benatar",
+      "target": "linear algebra",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 36,
+      "source": "Pat Benatar",
+      "target": "computing in context",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 37,
+      "source": "Lady Gaga",
+      "target": "essential data structures",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 38,
+      "source": "Lady Gaga",
+      "target": "linear regression models",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 39,
+      "source": "Lady Gaga",
+      "target": "politics of policy",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 40,
+      "source": "Tina Turner",
+      "target": "discrete math",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 41,
+      "source": "Tina Turner",
+      "target": "linear algebra",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 42,
+      "source": "Tina Turner",
+      "target": "essential data structures",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 43,
+      "source": "Fetty Wap",
+      "target": "statistical inference",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 44,
+      "source": "Fetty Wap",
+      "target": "algorithms",
+      "weight": 1,
+      "relationship": "default"
+    },
+    {
+      "id": 45,
+      "source": "Fetty Wap",
+      "target": "probability theory",
+      "weight": 1,
+      "relationship": "default"
+    }
+  ]
+}

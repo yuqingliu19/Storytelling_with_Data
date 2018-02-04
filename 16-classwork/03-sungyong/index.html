@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <style>
+      svg {
+        background: #f9f9f9;
+        display: block;
+        margin: 0 auto;
+      }
+
+      #chart-2 svg,
+
+      h1 { margin-bottom: 2rem; }
+
+      body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        -webkit-print-color-adjust: exact;
+      }
+
+      h3 { margin-top: 3rem; }
+
+      .container {
+        max-width: 46rem;
+      }
+
+      #chart2 svg g {
+        fill: red;
+      }
+
+      div.tooltip { 
+        -webkit-transition: fill .2s;
+            transition: fill .2s;
+        position: absolute;     
+        padding: 5px;
+        border: 0px;    
+        border-radius: 3px;     
+        text-align: center; 
+        font: 15px sans-serif;    
+        background: #001;
+        color: white;
+        opacity: 0;
+        pointer-events: none;	
+      }
+      div.tooltip.selected{
+        -webkit-transition: fill .2s; /* Safari */
+            transition: fill .2s;
+        opacity: 0.9;
+      }
+      circle.selected{
+        color:red;
+      }
+      .highlight{
+        fill: red;
+      }
+      .cool_text_description{
+        font-size:15px;
+        font-family:verdana;
+        alignment-baseline: auto;
+      }
+      .cool_text{
+        font-size:10px;
+        font-family:verdana;
+        alignment-baseline: auto;
+      }
+    </style>
+ </head>
+ <body>
+  <div class="container">
+   <h1>Project 01</h1>
+
+   <p class="cool_text_description">
+    <br> This is a line chart showing the infant mortality rate of 2003 and 2010 of each race.
+    <br> I'm trying to make the text labels and lines not to cross each other.
+   </p>
+   <div id="chart-1"></div>
+   <p class="cool_text_description">
+    <br> This is a diverging bar chart to show the difference between 2003 and 2010.
+    <br> As you can see infant mortality rate of all races declined, and black infant mortality rate had the biggest decline.
+    <br> This is not diverging bar graph yet, but I'm working on it.
+   </p>
+   <div id="chart-1-1"></div>
+
+    <p class="cool_text_description">
+     <br>This is a chart of population density of each county.
+     <br>
+     <br>- The orange circles are the average population densities within the county.
+     <br>- The lightblue circles are the minimum population densities within the county.
+     <br>- The pink circles are the maximum population densities within the county.
+     <br>- The green circles show the gap between the maximum and minimum desities.
+     <br>
+     <br> I am thinking of only showing the top 5 "most interesting" counties. I thought about the biggest difference between the maximum value and the minimum, but I found that too many rows have the same top difference. I'm thinking about it.
+    </p>
+   <div id="chart-2"></div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+   <script src="d3-tip.js"></script>
+   <script src="project01_01.js"></script>
+   <script src="project01_01_01.js"></script>
+   <script src="project01_02.js"></script>
+  </div>
+ </body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <style>
+      svg {
+        background: #f9f9f9;
+        display: block;
+        margin: 0 auto;
+      }
+
+      h1 { margin-bottom: 2rem; }
+
+      body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        -webkit-print-color-adjust: exact;
+      }
+
+      h3 { margin-top: 3rem; }
+
+      .container {
+        max-width: 46rem;
+      }
+
+      #chart2 svg g {
+        fill: red;
+      }
+    </style>
+  </head>
+  <body>
+  <div class="container">
+    <h1>Project 1</h1>
+
+    <h3>Chart 1: Bar Charts</h3>
+    <h4> Comparing Airline Incidents : 1985-1999 period vs 2000-2014  period</h3>
+    <p>The charts show the bar plots of airline incidents in periods 85-99 and 00-14</p>
+    <p>The two charts can be used to see which airline had a reduction or increase in the number of its incidents</p>
+    <div id="chart-1a"></div>
+
+    <p></p>
+    <div id="chart-1b"></div>
+    <p></p>
+    <p>We can see reduction in the airline incidents in AirFrance,Ethiopian in 2000-2014 period</p>
+
+    <h3>Chart 2: Line Chart</h3>
+    <p>The Chart compares the airline incidents in 85-99 vs 00-14 period.Delta has had a high number of incidents in both the periods</p>
+    <p>SWISS has had lowest number of incidents in both the periods</p>
+
+    <div id="chart-2"></div>
+
+    <h3>Chart 3: Line Charts</h4>
+    <h4> All types of Alcohol Consumption in different Countries</h4>
+    <p>The chart shows all types of alcohol consumption in litres per capita of various countries.</p>
+    <p>Belgium and Austria seem to be consuming the most among all countries</p>
+    <div id="chart-3"></div>
+
+    <h3>Chart 4:  Pie Charts</h3>
+    <h4>Alcohol consumption of various types in different Countries using Pie Charts</h3>
+    <p>The chart shows different kinds of alcohol consumption (beer,wine,spirits)in litres per capita of various countries.</p>
+
+
+    <div id="chart-4"></div>
+
+    <!-- This is D3, our graphing library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+    <!-- Now we include our actual visualization -->
+    <script src="Project1-chart-1.js"></script>
+    <script src="Project1-chart-1b.js"></script>
+    <script src="Project1-chart-2.js"></script>
+    <script src="Project1-chart-3.js"></script>
+    <script src="Project1-chart-4.js"></script>
+
+  </div>
+</html>

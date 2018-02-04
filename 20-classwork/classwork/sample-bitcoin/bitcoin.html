@@ -1,0 +1,182 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <style>
+      svg { 
+        display: block;
+        margin: 0 auto;
+      }
+
+      img.block {
+        display: block;
+        border: solid #333 1p;
+        margin: 0 auto;
+      }
+
+      svg {
+        margin-bottom: 15px;
+      }
+
+      .step {
+        padding-bottom: 90px;
+        margin-bottom: 10px;
+      }
+
+      .step, .row {
+        padding-top: 2rem;
+      }
+
+      .step:last-of-type {
+        padding-bottom: 150px;
+      }
+
+      .active {
+        background: beige;
+      }
+
+      footer {
+        background: #f1f1f1;
+        color: #333;
+        padding: 60px 0;
+        text-align: center;
+      }
+
+      /* 
+        Begin Full-bleed backgrounds 
+
+        Many ways to fix up the text to be readable
+        https://css-tricks.com/design-considerations-text-images/
+      */
+
+      .bg1 {
+        background: url('laptop-color.jpg');
+      }
+
+      .bg2 {
+        background: url('laptop-color.jpg');
+      }
+
+      .background-image {
+        background-size: cover;
+        padding: 250px 50px;
+        /* 
+          This means...
+          150px spacing between text and top/bottom of image
+          20px spacing between text and left/right of screen
+        */
+        color: white;
+        text-align: center;
+        text-shadow: 0 0 5px rgba(0,0,0,0.5), 
+                     0 0 15px rgba(0,0,0,0.5),
+                     0 0 25px rgba(0,0,0,0.5);
+      }
+
+      .background-image h1 {
+        text-transform: uppercase;
+        font-size: 72px;
+      }
+      /* 
+        End full-bleed backgrounds 
+      */
+
+      /* 
+        The following allows us to make the graphic
+        "sticky" to the top of the page. The "top"
+        attribute should probably be the same as
+        the offset for scrollama (but % instead of decimal)
+      */
+
+      .sticky {
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        position: sticky;
+        height: fit-content;
+        top: 33%;
+      }
+
+      .graphic h3 {
+        text-align: center;
+        padding-bottom: 0;
+      }
+    </style>
+  </head>
+</head>
+<body>
+  <div class="background-image bg1">
+    <h1>Is Bitcoin ready to crash?</h1>
+    <h3>Or are we all cryptocurrency millionaires now?</h3>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="step" id="gone-up">
+          <p><em>Data from <a href="https://blockchain.info/charts/market-price?timespan=2years">blockchain.info</a></em></p>
+          <h3>Bitcoin has gone up, up, up!</h3>
+          <p>From cresting $400 just under two years ago to a current high of almost $10,000, BTC is on fire. But what's fueling the rise?</p>
+        </div>
+        <div class="step" id="china-off">
+          <h3>A trying September</h3>
+          <p>After two months of rallying, a hard fork and harsh changes to Chinese regulation sent BTC plummetting in September.</p>
+        </div>
+        <div class="step" id="current-time">
+          <p>Blah blah blah blah</p>
+          <p>Blah blah blah blah</p>
+          <p>Blah blah blah blah</p>
+        </div>
+      </div>
+      <div class="col-sm-8 graphic sticky">
+        <h3>BTC to USD</h3>
+        <div id="graphic-1"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="background-image bg1">
+    <h1>Blah blah blah</h1>
+    <h3>(No, we aren't millionaires)</h3>
+  </div>
+
+  <footer>
+    This is a little space at the bottom.
+  </footer>
+
+  <!-- This is D3, our graphing library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+  <!-- include our scrolling library -->
+  <script src='https://unpkg.com/scrollama'></script>
+  <script src='stickyfill.min.js'></script>
+
+  <script>
+    /* Allow position: sticky to work in old browsers */
+    var elements = document.querySelectorAll('.sticky');
+    Stickyfill.add(elements);
+
+    // instantiate the scrollama
+    var scroller = scrollama();
+
+    scroller
+      .setup({
+        offset: 0.33, // how far from the top?
+        step: '.step', // class for stepping through
+        debug: true, // shows the line
+        container: 'container'
+      })
+      .onStepEnter(function(response) {
+        // trigger the stepin event
+        d3.select(response.element).dispatch('stepin')
+      })
+      .onStepExit(function(response) {
+        // trigger the stepout event
+        d3.select(response.element).dispatch('stepout')
+      })
+  </script>
+
+  <script src='bitcoin.js'></script>
+</body>
+</html>

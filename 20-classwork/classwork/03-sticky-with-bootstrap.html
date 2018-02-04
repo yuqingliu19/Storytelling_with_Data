@@ -1,0 +1,225 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <style>
+
+      svg { 
+        display: block;
+        margin: 0 auto;
+      }
+
+      img.block {
+        display: block;
+        border: solid #333 1p;
+        margin: 0 auto;
+      }
+
+      svg {
+        margin-bottom: 15px;
+      }
+
+      .step {
+        padding-bottom: 90px;
+        margin-bottom: 10px;
+      }
+
+      .step, .row {
+        padding-top: 2rem;
+      }
+
+      .step:last-of-type {
+        padding-bottom: 150px;
+      }
+
+      .active {
+        background: beige;
+      }
+
+      footer {
+        background: #f1f1f1;
+        color: #333;
+        padding: 60px 0;
+        text-align: center;
+      }
+      
+      /* 
+        Begin Full-bleed backgrounds 
+
+        Many ways to fix up the text to be readable
+        https://css-tricks.com/design-considerations-text-images/
+      */
+
+      .bg1 {
+        background: url('nature.jpg');
+      }
+
+      .bg2 {
+        background: url('wall.jpg');
+      }
+
+      .background-image {
+        background-size: cover;
+        padding: 150px 50px;
+        /* 
+          This means...
+          150px spacing between text and top/bottom of image
+          20px spacing between text and left/right of screen
+        */
+        color: white;
+        text-align: center;
+        text-shadow: 0 0 5px rgba(0,0,0,0.5), 
+                     0 0 15px rgba(0,0,0,0.5),
+                     0 0 25px rgba(0,0,0,0.5);
+      }
+
+      .background-image h1 {
+        text-transform: uppercase;
+        font-size: 72px;
+      }
+      /* 
+        End full-bleed backgrounds 
+      */
+
+      /* 
+        The following allows us to make the graphic
+        "sticky" to the top of the page. The "top"
+        attribute should probably be the same as
+        the offset for scrollama (but % instead of decimal)
+      */
+
+      .sticky {
+        position: -webkit-sticky;
+        position: -moz-sticky;
+        position: -ms-sticky;
+        position: -o-sticky;
+        position: sticky;
+        height: fit-content;
+        top: 33%;
+      }
+
+    </style>
+  </head>
+</head>
+<body>
+  <div class="background-image bg1">
+    <h1>Text can go over a full-width image</h1>
+    <h3>You can customize this using CSS.</h3>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="step" id="first-step">
+          <h3>This is a step</h3>
+          <p>Right now it has a little padding on the top and bottom, and the text is all left-aligned, but you can change that easily in the CSS. It's all of the <code>.row</code> stuff.</p>
+        </div>
+        <div class="step" id="second-step">
+          <h3>This is another step</h3>
+          <p>Blah blah blah blah</p>
+          <p>Blah blah blah blah</p>
+          <p>Blah blah blah blah</p>
+        </div>
+        <div class="step" id="third-step">
+          <p>Blah blah blah blah</p>
+          <p>Blah blah blah blah</p>
+          <p>Blah blah blah blah</p>
+        </div>
+      </div>
+      <div class="col-sm-8 graphic sticky">
+        <p>I am the graphic. <strong>Remove this text</strong></p>
+        <div id="graphic-1"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="background-image bg2">
+    <h1>Yes, CSS to change <em>everything</em></h1>
+    <h3>Images, font color, text shadow... You might want to edit the images themselves, though, to make the text easier to read.</h3>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col">
+        <h3>Here is a wide thing of text</h3>
+        <p>As long as it's a separate <code>.row</code> it won't interefere with the graphic. I can have this text go all the way across! It's fine! Nothing happens!</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="step" id="step-2-1">
+          <h3>This is a step</h3>
+          <p>Right now it has a little padding on the top and bottom, and the text is all left-aligned, but you can change that easily in the CSS. It's all of the <code>.row</code> stuff.</p>
+        </div>
+        <div class="step" id="step-2-2">
+          <h3>This is another step</h3>
+          <p>Blah blah blah blah</p>
+          <p>Blah blah blah blah</p>
+          <p>Blah blah blah blah</p>
+        </div>
+      </div>
+      <div class="col-sm-4 graphic sticky">
+        <p>I am another graphic. <strong>Remove this text</strong></p>
+        <div id="graphic-2"></div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h3>We can also put a wide graphic in here</h3>
+        <div id="graphic-3"></div>
+        <p>It doesn't need to be in one of those sticky things!</p>
+        <p>If you want to make it do a transition thing though you'll need to use a <code>.step</code></p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    This is a little space at the bottom.
+  </footer>
+
+  <!-- This is D3, our graphing library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+  <!-- include our scrolling library -->
+  <script src='https://unpkg.com/scrollama'></script>
+  <script src='stickyfill.min.js'></script>
+
+  <script>
+    /* Allow position: sticky to work in old browsers */
+    var elements = document.querySelectorAll('.sticky');
+    Stickyfill.add(elements);
+
+    // instantiate the scrollama
+    var scroller = scrollama();
+
+    scroller
+      .setup({
+        offset: 0.33, // how far from the top?
+        step: '.step', // class for stepping through
+        debug: true, // shows the line
+        container: 'container'
+      })
+      .onStepEnter(function(response) {
+        // trigger the stepin event
+
+        // add highlight when entering a step
+        d3.select(response.element).classed('active', true)
+      })
+      .onStepExit(function(response) {
+        // trigger the stepout event
+
+        // remove highlight when exiting a step
+        d3.select(response.element).classed('active', false)
+      })
+  </script>
+
+  <script src='chart-1.js'></script>
+  <script src='chart-2.js'></script>
+  <script src='chart-3.js'></script>
+</body>
+</html>

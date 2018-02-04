@@ -1,0 +1,138 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <style>
+      svg { 
+        border: solid #f9f9f9 5px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      img.block {
+        display: block;
+        border: solid #333 1p;
+        margin: 0 auto;
+      }
+
+      svg {
+        margin-bottom: 15px;
+      }
+
+      .row {
+        padding: 30px 0;
+      }
+
+      .step {
+        margin-bottom: 10px;
+      }
+
+      .active {
+        background: beige;
+      }
+
+      /* 
+        Begin Full-bleed backgrounds 
+
+        Many ways to fix up the text to be readable
+        https://css-tricks.com/design-considerations-text-images/
+      */
+
+      .bg1 {
+        background: url('nature.jpg');
+      }
+
+      .bg2 {
+        background: url('wall.jpg');
+      }
+
+      .background-image {
+        background-size: cover;
+        padding: 150px 50px;
+        /* 
+          This means...
+          150px spacing between text and top/bottom of image
+          20px spacing between text and left/right of screen
+        */
+        color: white;
+        text-align: center;
+        text-shadow: 0 0 5px rgba(0,0,0,0.5), 
+                     0 0 15px rgba(0,0,0,0.5),
+                     0 0 25px rgba(0,0,0,0.5);
+      }
+
+      .background-image h1 {
+        text-transform: uppercase;
+        font-size: 72px;
+      }
+      /* 
+        End full-bleed backgrounds 
+      */
+
+      footer {
+        background: #f1f1f1;
+        color: #333;
+        padding: 60px 0;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+</head>
+<body>
+  <div class="background-image bg1">
+    <h1>Text can go over a full-width image</h1>
+    <h3>You can customize this using CSS.</h3>
+  </div>
+
+  <div class="container">
+    <div class="row step">
+      <div class="col">
+        <h3>This is a step</h3>
+        <p>Right now it has a little padding on the top and bottom, and the text is all left-aligned, but you can change that easily in the CSS. It's all of the <code>.row</code> stuff.</p>
+      </div>
+    </div>
+    <div class="row step">
+      <div class="col">
+        <h3>You really shouldn't use this template</h3>
+        <p>The "sticky" one is a little more flexible. We're just using this one to figure out how <a href="https://getbootstrap.com/">Bootstrap</a> works, specifically the <a href="https://getbootstrap.com/docs/4.0/layout/grid/">grid system</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="background-image bg2">
+    <h1>Yes, CSS to change <em>everything</em></h1>
+    <h3>Images, font color, text shadow... You might want to edit the images themselves, though, to make the text easier to read.</h3>
+  </div>
+
+  <div class="container">
+    <div class="row step">
+      <div class="col">
+        <h3>This is a third step</h3>
+      </div>
+    </div>
+    <div class="row step">
+      <div class="col">
+        <h3>This is a fourth step</h3>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    This is a little space at the bottom.
+  </footer>
+
+  <!-- This is D3, our graphing library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+  <!-- include our scrolling library -->
+  <script src='https://unpkg.com/scrollama'></script>
+
+
+  <script>
+    // Let's put a scroller here, too
+    // And maybe highlight the elements we've scrolled to?
+  </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Bubble charts / Force diagrams</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <style>
+      svg { 
+        border: solid black 1px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      h1 { margin-bottom: 2rem; }
+
+      body {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      h3 { 
+        margin-top: 3rem; 
+        margin-bottom: 1rem;
+      }
+
+      .container {
+        max-width: 46rem;
+      }
+
+      img.block {
+        display: block;
+        border: solid #333 1p;
+        margin: 0 auto;
+      }
+
+      svg {
+        margin-bottom: 15px;
+      }
+
+      .d3-tip {
+        line-height: 1;
+        font-weight: bold;
+        padding: 12px;
+        background: rgba(0, 0, 0, 0.8);
+        color: #fff;
+        border-radius: 2px;
+        pointer-events: none;
+      }
+
+      /* Creates a small triangle extender for the tooltip */
+      .d3-tip:after {
+        box-sizing: border-box;
+        display: inline;
+        font-size: 10px;
+        width: 100%;
+        line-height: 1;
+        color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        pointer-events: none;
+      }
+
+      /* Northward tooltips */
+      .d3-tip.n:after {
+        content: "\25BC";
+        margin: -1px 0 0 0;
+        top: 100%;
+        left: 0;
+        text-align: center;
+      }
+
+      /* Eastward tooltips */
+      .d3-tip.e:after {
+        content: "\25C0";
+        margin: -4px 0 0 0;
+        top: 50%;
+        left: -8px;
+      }
+
+      /* Southward tooltips */
+      .d3-tip.s:after {
+        content: "\25B2";
+        margin: 0 0 1px 0;
+        top: -8px;
+        left: 0;
+        text-align: center;
+      }
+
+      /* Westward tooltips */
+      .d3-tip.w:after {
+        content: "\25B6";
+        margin: -4px 0 0 -1px;
+        top: 50%;
+        left: 100%;
+      }
+
+      #chart-3 .bar,
+      #chart-4 .bar  {
+        fill: lightblue;
+      }
+
+      #chart-3 .bar:hover,
+      #chart-4 .bar:hover {
+        fill: steelblue;
+      }
+    </style>
+  </head>
+</head>
+<body>
+  <div class="container">
+    <h1>Bubble charts / Force diagrams</h1>
+
+    <h3>1. Bubble charts</h3>
+
+    <p>Bubble charts look like <a href="http://www.nytimes.com/interactive/2012/02/13/us/politics/2013-budget-proposal-graphic.html">this from a million years ago</a>. Not only are they fun because things are circles, they're doubly fun because <em>those circles are in circles!</em></p>
+
+    <p>These bubble charts are <strong>not</strong> about networks, they're just about moving things around with forces. For something similar, you might also want to look at <a href="https://bl.ocks.org/mbostock/ca5b03a33affa4160321">circle packing</a> depending on your needs and interests.</p>
+
+    <button id="decades">Split into decades</button>
+    <button id="no-decades">Put everyone together</button>
+    
+    <div id="chart-1"></div>
+
+    <h3>2. Network visualizations</h3>
+
+    <p>Network visualizations/node and link diagrams <strong>are</strong> about networks. People love them, and you can use them to make <a href="http://www.martingrandjean.ch/network-visualization-shakespeare/">nonsense like this</a> to tell you things you already know. 😇</p>
+
+    <p>To turn CSV data into network data we can use a <a href="https://jsoma.github.io/tiny-spider/">handy tool like this</a>.
+
+    <div id="chart-2"></div>
+
+    <h3>3. Force + manual positioning</h3>
+
+    <p>The best thing you can do in life is something like <a href="https://fleximize.com/paypal-mafia/">this</a> or <a href="https://www.nytimes.com/interactive/2014/06/20/sports/worldcup/how-world-cup-players-are-connected.html?_r=0">this</a>.</p>
+    <p>Care about something? <strong>Position it manually.</strong></p>
+    <p>Don't care about something? <strong>Let the force handle it.</strong></p>
+    <p>Just like in real true normal life, it is good to care about at least a little about something.</p>
+
+    <div id="chart-3"></div>
+
+  </div>
+
+  <!-- This is D3, our graphing library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.2/d3.min.js"></script>
+
+  <!-- Now we include our actual visualization -->
+  <script src="01-bubbles.js"></script>
+  <script src="02-network.js"></script>
+  <script src="03-mafia.js"></script>
+</body>
+</html>

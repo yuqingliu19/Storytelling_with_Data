@@ -1,0 +1,132 @@
+If your pie is off of the side of the page, think about where 0,0 is and how to move it there.
+
+
+
+
+
+
+
+
+
+
+
+
+
+pies require two pieces: a pie and an arc. The pies provide the angles, the arcs provide the radii
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+When building a pie chart, if you have 3 data points you'll also want 3 wedges.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Something is weird about binding data when building a pie chart! Or different, at least.
+
+
+
+
+
+
+
+
+
+
+
+
+And whenever you're doing function(d) stuff, be sure to console.log(d) to see what your data looks like, because something changes about it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3 slices, so 3 wedges. 3 slices, so 3 labels.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In class we always centered the labels with .attr("text-anchor", "middle"), but you can also say "if it's on the right hand side of the circle, left-align. if it's on the left, right-align." That code is:
+
+.attr("text-anchor", function(d) {
+	if(d.startAngle > Math.PI) {
+	  return "end"
+	} else {
+	  return "start"
+	}
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+If the pie slices all seem to be the same color, try console.log(d) to remind yourself what data looks like when you're making a pie graph.
+
+
+
+

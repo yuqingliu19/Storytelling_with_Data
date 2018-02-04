@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url(../fonts/Lato-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url(../fonts/Lato-Light.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.headline {
+    border: 1px; solid red;
+    padding: 15px;
+    margin-top: 5%;   
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+.byline {
+    border: 1px; solid red;
+    padding: 15px;
+    margin-top: -1%;   
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+}
+
+.text {
+    border: 1px; solid red;
+    padding: 15px;
+    margin-top: 0%;   
+    margin-left: 27%;
+    margin-right: 27%;
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    font-style: ;
+    font-size: 16px;
+    text-align: justify;    
+}
+
+.text-title {
+    font-family: 'Lato-Bold';
+}
+.legend-texts {
+    font-family: 'Lato-Light';
+}
+/*
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+*/
+
+
+
+
+/*.header {
+    border: 1px solid red;
+    padding: 15px;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red !important;
+}
+
+.story-title {
+  font-weight: bold !important;
+}
+
+.story-title a {
+    color: #666;
+    text-decoration: none;
+}
+.story-details {
+  line-height: 19px !important;
+}
+
+.titles-height {
+    height: 120px;
+}
+
+.col-empty {width: 100% !important;}
+.col-built-with {
+    width: 100% !important;
+    font-size: 18px;
+}
+
+.col-title-1 {width: 30% !important}
+.col-title-1-title {width: 100%;}
+
+.col-title-border {width: 5% !important;}
+.col-title-2 {width: 30% !important}
+.col-title-3 {width: 30% !important}
+
+.col-horizontal {width: 100 !important;}
+
+.svg-box {
+    height: 5px;
+    width: 80%;
+}*/

@@ -1,0 +1,36 @@
+https://earthexplorer.usgs.gov/
+
+
+to_int(
+regexp_substr( "building_l",'^(\\d+)$')
+)
+
+
+if( 
+regexp_match("building_l", '^(\\d+)$'),
+regexp_substr( "building_l",'^(\\d+)$'),
+1)
+
+
+-119.6377, 37.7339
+
+
+http://maps.nypl.org/warper/
+http://maps.nypl.org/warper/maps/16670
+
+
+http://jquery.com/
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+https://api.jqueryui.com/category/effects/
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+
+
+<link rel="stylesheet" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+<script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+
+http://unheap.com

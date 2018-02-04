@@ -1,0 +1,9 @@
+age,percentage,year,gender,gender_age
+20-24,53.94,1980,female,female-20-24
+20-24,56.56,2010,female,female-20-24
+25-29,37.57,1980,female,female-25-29
+25-29,42.55,2010,female,female-25-29
+20-24,46.05,1980,male,male-20-24
+20-24,43.44,2010,male,male-20-24
+25-29,62.42,1980,male,male-25-29
+25-29,57.45,2010,male,male-25-29

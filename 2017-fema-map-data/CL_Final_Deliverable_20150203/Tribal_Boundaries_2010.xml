@@ -1,0 +1,238 @@
+﻿<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>FEMA, Federal Emergency Management Agency</origin>
+        <pubdate>20140101</pubdate>
+        <title>Tribal_Boundaries_2010</title>
+        <geoform>vector digital data</geoform>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>To create the tribal boundaries, all data from the 2010 Census American Indian, Alaska Native, and Native Hawaiian (AIANNH) Areas were utilized for each state. To assign the CIDs to each area, the NAME field in the AIANNH is manually compared to the CIS database name. For all polygons derived from the 2010 Census AIANNH layer, the “SOURCE” field in the Tribal Boundaries layer is populated with the code “A”.Assigning 2010 Census Population to Jurisdictional Boundaries, Tribal BoundariesFor the Tribal Boundaries, the 2010 Census population can be calculated by joining the layers to the corresponding Census TIGER/Line layers with Demographic Profile 1 attributes, using the GEOID10 field. When joined, the population can be directly calculated into the spatial data. To maintain a unique identifier for each polygon, a new field “T_AREA_ID” was added and calculated as follows:T_AREA_ID = 2-digit State FIPS code + “T” for Trust Land or “R” for Reservation + XXXX. Determining the “T” or “R” usage can be derived from the “T_GEOID10” field using the suffix. The XXXX denotes a unique numerical counter within each state (e.g. 0001, 0002, 0003, etc.).</abstract>
+      <purpose>The 2010 Community Layer geodatabase includes a topologically correct Tribal Boundaries layer, created using 2010 Census boundary and population data. The layer is comprised of all polygons from the 2010 Census TIGER/Line American Indian, Alaska Native, and Native Hawaiian (AIANNH) Areas data layer.
+
+</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>20131101</begdate>
+          <enddate>20131101</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>The majority of the data complied for this dataset is from the 2010 United States of America census. </current>
+    </timeperd>
+    <status>
+      <progress>In work</progress>
+      <update>As needed</update>
+    </status>
+    <spdom>
+      <bounding>
+        <westbc>-174.237101</westbc>
+        <eastbc>-67.035518</eastbc>
+        <northbc>71.340257</northbc>
+        <southbc>18.910690</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>FEMA</themekey>
+        <themekey>Community</themekey>
+        <themekey>Layer</themekey>
+        <themekey>Tribal</themekey>
+        <themekey>Boundaries</themekey>
+        <themekey>2010</themekey>
+      </theme>
+    </keywords>
+    <accconst>None</accconst>
+    <useconst>Although this data has been used by FEMA, no warranty, expressed or implied, is made by FEMA as to the accuracy of the data and related materials. The act of distribution shall not constitute any such warranty, and no responsibility is assumed by FEMA in the use of these data, or related materials.</useconst>
+    <datacred>FEMA, Strategic Alliance for Risk Reduction (STARR), Stantec Consulting Services Inc.</datacred>
+    <native> Version 6.2 (Build 9200) ; Esri ArcGIS 10.1.1.3143</native>
+  </idinfo>
+  <spdoinfo>
+    <direct>Vector</direct>
+    <ptvctinf>
+      <sdtsterm>
+        <sdtstype>GT-polygon composed of chains</sdtstype>
+        <ptvctcnt>844</ptvctcnt>
+      </sdtsterm>
+    </ptvctinf>
+  </spdoinfo>
+  <spref>
+    <horizsys>
+      <geograph>
+        <latres>8.9831528411952133e-009</latres>
+        <longres>8.9831528411952133e-009</longres>
+        <geogunit>Decimal Degrees</geogunit>
+      </geograph>
+      <geodetic>
+        <horizdn>D North American 1983</horizdn>
+        <ellips>GRS 1980</ellips>
+        <semiaxis>6378137.0</semiaxis>
+        <denflat>298.257222101</denflat>
+      </geodetic>
+    </horizsys>
+  </spref>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>Tribal_Boundaries_2010</enttypl>
+        <enttypd>Polygon boundary file of 2010 Tribal boundaries</enttypd>
+        <enttypds>FEMA</enttypds>
+      </enttyp>
+      <attr>
+        <attrlabl>OBJECTID</attrlabl>
+        <attrdef>Internal feature number.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <udom>Sequential unique whole numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE</attrlabl>
+        <attrdef>Feature geometry.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <udom>Coordinates defining the features.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_AREA_ID</attrlabl>
+        <attrdef>Unique ID created for each community in layer; T_AREA_ID = 2-digit State FIPS code + “T” + XXXX 
+</attrdef>
+        <attrdefs>FEMA</attrdefs>
+        <attrdomv>
+          <udom>Unique ID created for each community in layer; T_AREA_ID = 2-digit State FIPS code + “T” + XXXX</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_STATEFP10</attrlabl>
+        <attrdef>Federal Information Processing Standards code for State name.</attrdef>
+        <attrdefs>US Census</attrdefs>
+        <attrdomv>
+          <udom>Federal Information Processing Standards code for State name.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_GEOID10</attrlabl>
+        <attrdef>2010 Census nation-based code. Identification code for various geometries. Based on a concatenation of state FIPS codes and codes for the data used to populate this dataset.</attrdef>
+        <attrdefs>US Census</attrdefs>
+        <attrdomv>
+          <udom>2010 Census nation-based code. Identification code for various geometries. Based on a concatenation of state FIPS codes and codes for the data used to populate this dataset.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_NAME10</attrlabl>
+        <attrdef>Entity name</attrdef>
+        <attrdefs>US Census</attrdefs>
+        <attrdomv>
+          <udom>Entity name.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_NAMELSAD10</attrlabl>
+        <attrdef>Current name for the area that includes Legal/Statistical Area Definition</attrdef>
+        <attrdefs>US Census</attrdefs>
+        <attrdomv>
+          <udom>Current name for the area that includes Legal/Statistical Area Definition</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_LSAD10</attrlabl>
+        <attrdef>Legal/Statistical Area Definition codes.</attrdef>
+        <attrdefs>US Census</attrdefs>
+        <attrdomv>
+          <udom>Legal/Statistical Area Definition codes.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_REGION</attrlabl>
+        <attrdef>FEMA Region Number</attrdef>
+        <attrdefs>FEMA</attrdefs>
+        <attrdomv>
+          <udom>FEMA Region Number</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_CID</attrlabl>
+        <attrdef>Community Identification number from CIS database</attrdef>
+        <attrdefs>FEMA</attrdefs>
+        <attrdomv>
+          <udom>Community Identification number from CIS database</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_CIS_NAME</attrlabl>
+        <attrdef>Community Information System name</attrdef>
+        <attrdefs>FEMA</attrdefs>
+        <attrdomv>
+          <udom>Community Information System name</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_CIS_COMMENTS</attrlabl>
+        <attrdef>General comment field used to track extraneous information</attrdef>
+        <attrdefs>FEMA</attrdefs>
+        <attrdomv>
+          <udom>General comment field used to track extraneous information</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_POP10</attrlabl>
+        <attrdef>2010 population derived from US Census data</attrdef>
+        <attrdefs>FEMA</attrdefs>
+        <attrdomv>
+          <udom>2010 population derived from US Census data</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>T_SOURCE</attrlabl>
+        <attrdef>Denotes source of spatial data</attrdef>
+        <attrdefs>FEMA</attrdefs>
+        <attrdomv>
+          <udom>Denotes source of spatial data</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE_Length</attrlabl>
+        <attrdef>Length of feature in internal units.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <udom>Positive real numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>SHAPE_Area</attrlabl>
+        <attrdef>Area of feature in internal units squared.</attrdef>
+        <attrdefs>Esri</attrdefs>
+        <attrdomv>
+          <udom>Positive real numbers that are automatically generated.</udom>
+        </attrdomv>
+      </attr>
+    </detailed>
+  </eainfo>
+  <metainfo>
+    <metd>20131208</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>Stantec Consulting Services, Inc</cntorg>
+          <cntper>Stantec</cntper>
+        </cntorgp>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <city>Chicago</city>
+          <state>IL</state>
+          <postal>60603-4139</postal>
+          <country>US</country>
+        </cntaddr>
+        <cntvoice>312-262-2282</cntvoice>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001-1998</metstdv>
+    <mettc>local time</mettc>
+  </metainfo>
+</metadata>

@@ -1,0 +1,109 @@
+Double-click 02-homework.html to open it in the browser. You'll use this to check your work.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+To make your edits, you should open up 02-homework.html file in a PLAIN-TEXT EDITOR, like https://atom.io or https://www.sublimetext.com. You can't use Microsoft Word or anything.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+You might not know HTML, but don't worry, it takes about 45 seconds to learn. It's built up of things called TAGS. Tags usually look like this:
+
+  <h1>This is a number one headline</h1>
+  <h3>This is a number three headline</h3>
+
+  <p>This is a paragraph</p>
+
+The <h1> means "I'm about to start a headline!!!" and the </h1> means "okay I'm done with the headline!!!". That's honestly about all there is to it.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+We're going to be editing this line:
+
+  <circle cx="100" cy="100" fill="lightblue" r="50">
+
+Which says "make me a lightblue-filled circle with a radius of 50. Place its center on the x axis at 100, and its center on the y axis at 100."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+lightblue is a named color. While you probably shouldn't use named colors in normal practice, here's a list: https://en.wikipedia.org/wiki/Web_colors#X11_color_names
+
+You can probably guess what the color pink is called, though.
+
+
+
+
+
+
+
+
+
+
+
+
+
+r means radius.
+
+
+
+
+
+

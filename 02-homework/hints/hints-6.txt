@@ -1,0 +1,1 @@
+A city with 5 people in it should be 5 pixels wide.

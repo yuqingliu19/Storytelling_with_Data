@@ -1,0 +1,50 @@
+The grey area is boundaries of the svg - the drawing area for the graphic we're making.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Each rectangle is one of these lines:
+
+  <rect x="146" y="5" width="20" height="20"></rect>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+The 'x' and 'y' for the rectangle are the LEFT and the TOP of the rectangle.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Remember how you colored in the circle in the first question? It's the same here.
+
+
+

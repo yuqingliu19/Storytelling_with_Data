@@ -1,0 +1,113 @@
+<html>
+<head>
+<style>
+body {
+  background: #1e1e1e;
+  font-family: Arial, "Arial Rounded MT";
+  color: white;
+}
+
+h3 {
+  display: inline-block;
+  background: white;
+  color: #1e1e1e;
+  padding: 5px 7px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 64px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+svg {
+  display: block;
+  margin: 0 auto;
+}
+
+circle {
+  fill: white;
+  stroke: white;
+}
+
+text {
+  fill: white;
+  font-size: 12px;
+}
+
+a, a:visited {
+  color: white;
+}
+
+code {
+  background: white;
+  color: #1e1e1e;
+  padding: 20px 30px;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+<h1>D3 Scales</h1>
+<h2>Storytelling with Data, Class 2</h2>
+
+<h3>Using the JavaScript console</h3>
+<p>Open up your <strong>Javascript console</strong> by...</p>
+<ul>
+  <li><strong>Cmd+Alt+I</strong>, or</li>
+  <li><strong>View > Developer > JavaScript Console</strong>, or</li>
+  <li><strong>Right click > Inspect > Console</strong></li>
+</ul>
+
+<p>You can type in the section at the bottom and it will run the code for you.</p>
+
+<h3>Scale Notes</h3>
+
+<p>Scale notes are available <a target="_blank" href="http://jonathansoma.com/lede/storytelling-2017/d3/scales/">here</a></p>
+
+<h3>Scale Template</h3>
+
+<p><code>d3.scaleLinear().domain([inputMin, inputMax]).range([outputMin, outputMax])</code></p>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.10.2/d3.min.js"></script>
+<script type="text/javascript">
+var cities = [
+  {
+    name: 'Washington, DC',
+    population: .7
+  },
+  {
+    name: 'Los Angeles',
+    population: 5
+  },
+  {
+    name: 'Jakarta',
+    population: 9.5
+  },
+  {
+    name: 'Delhi',
+    population: 19
+  },
+  {
+    name: 'Moscow',
+    population: 12
+  }
+]  
+
+var height = 200, width = 1000;
+
+var names = cities.map(function(d) { return d.name })
+var populations = cities.map(function(d) { return +d.population })
+var minPop = d3.min(populations)
+var maxPop = d3.max(populations)
+
+</script>
+</body>
+</html>
